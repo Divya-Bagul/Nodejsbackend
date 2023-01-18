@@ -1,0 +1,17 @@
+<html>
+    <body>
+
+        <%-  include('comman/header'); %>
+        <h1> Hello ejs profile page from ejs templete....
+            <%= users.name %> <br>
+
+            <!-- <%= users.phone %> -->
+        </h1>
+        <ul>
+
+            <% users.skill.forEach((item,key)=>{ %>
+                    <li><%= item %> and  key is <%= key %></li>
+            <% }) %>
+        </ul>
+    </body>
+</html>
